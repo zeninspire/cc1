@@ -9,12 +9,18 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
+var handler = require('./handler');
+
 app.get('/', function(req,res){
   res.send('hi there!')
 });
 
+app.post('/phase1', handler.phase1);
+
 app.listen(PORT, () => console.log('Listening on port', PORT))
 
 var db = require('./database/database_setup.js');
+
+var handler = require('./handler.js')
 
 

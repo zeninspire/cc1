@@ -12,7 +12,7 @@ module.exports.Files = (table) => {
 
 module.exports.Tags = (table) => {
   table.increments('tag_id').primary();
-  table.string('tag_name');
+  table.string('tag_name').unique()
 }
 
 module.exports.Files_Tags = (table) => {

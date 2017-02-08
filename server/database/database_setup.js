@@ -24,4 +24,6 @@ let Tags = knex.schema.createTableIfNotExists('Tags', schema.Tags)
 let Files_Tags = knex.schema.createTableIfNotExists('Files_Tags', schema.Tags)
 
 Promise.all([Files, Tags, Files_Tags])
+// .then(()=>knex.destroy())
 
+module.exports = knex;
