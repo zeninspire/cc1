@@ -1,0 +1,25 @@
+{
+  "name": "cc1",
+  "version": "1.0.0",
+  "description": "cc for nova credit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeninspire/cc1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeninspire/cc1/issues"
+  },
+  "homepage": "https://github.com/zeninspire/cc1#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "knex": "^0.12.6",
+    "sqlite3": "^3.1.8"
+  }
+}
